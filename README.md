@@ -16,8 +16,8 @@ This can be done for v1, v2, v3 versions of the image `wordofprasanna/myapp`
 To expose the service use port forwarding,
 Note: mk is the alias for `microk8s kubectl`
 
-mk port-forward deploy/myapp-myapp-chart 8082:80
+`mk port-forward deploy/myapp-myapp-chart 8082:80`
 
 To expose the ArgoCD
 
-mk port-forward svc/argocd-server -n argocd 8080:443
+`mk port-forward svc/argocd-server -n argocd 8080:443`
